@@ -277,58 +277,8 @@
 <li>github看开源项目</li>
 </ul>
 </li>
-<li><p>程序逻辑</p>
-<ul>
-<li>变量命名（语言规范、程序猿规范）</li>
-<li>循环</li>
-<li>分支</li>
 </ul>
-</li>
-<li><p>变量</p>
-<ul>
-<li>静态、动态（声明变量时不用指定类型是动态类型）</li>
-<li>强类型、弱类型（根据值，可以知道是什么类型。例如，1是整形，1.0是浮点数，Python是强类型。如果只传地址，无法判断变量类型）</li>
-<li>值类型、引用类型（影响if判断时，a==b，值类型判断数值，引用类型判断指针是否指向同一个地址）</li>
-<li>字符串(Java 两个String值相等的话，==为1，都在常量池里面，stringbuffer不是)<ul>
-<li>正则表达式</li>
-<li>时间、日期（支持不支持计算？格式、时区、时间戳？）</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>容器（进阶）</p>
-<ul>
-<li>基本操作</li>
-<li>浅复制、深复制</li>
-<li>序列化、反序列化</li>
-</ul>
-</li>
-<li><p>抽象方法的定义、实现</p>
-<ul>
-<li>函数</li>
-<li>类（继承、封装、多态、接口）</li>
-</ul>
-</li>
-<li><p>生态（进阶）</p>
-<ul>
-<li>第三方包管理工具（maven）</li>
-</ul>
-</li>
-<li><p>高级功能</p>
-<ul>
-<li>Java 高性能，高线程，携程？</li>
-</ul>
-</li>
-</ul>
-<h1><span id="任务">任务</span></h1><ol>
-<li>消息循环的交互程序（六步以上的交互）</li>
-<li>做精细控制<ol>
-<li>凯撒密码（输入输出）</li>
-<li>破解</li>
-</ol>
-</li>
-</ol>
-
+        
       
 
       
@@ -407,20 +357,8 @@
 <figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">npm install https:<span class="regexp">//gi</span>thub.com<span class="regexp">/CodeFalling/</span>hexo-asset-image</span><br></pre></td></tr></table></figure>
 
 <p>报错如下：</p>
-<p><img src="/2020/12/14/hexo%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20201214100939344.png" alt="image-20201214100939344"></p>
-<p>​    显示权限不够，但是我已经加了<code>sudo</code>。查阅博客后发现，是因为用<code>root </code>用户进行了局部安装npm包的操作，留下所属权为 <code>root</code> 的文件，导致普通用户无法访问 <code>root</code>的文件内容。找到报错的文件，会看到它的所有者是 <code>root</code>。之前用 <code>root</code> 进行了局部的安装操作，导致这个文件的所有者是 <code>root</code> ，还包括 <code>.npm</code> 文件夹下部分文件夹的所有权，也是 <code>root</code>，普通用户当然就无权访问了。就会报权限错误。</p>
-<p><em>解决</em>：</p>
-<p>​    将.npm所有者变为自己</p>
-<p><img src="/2020/12/14/hexo%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20201214110144533.png" alt="image-20201214110144533"></p>
-</li>
-<li><p>设置typora，使用相对路径。</p>
-<p><img src="/2020/12/14/hexo%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20201214110345934.png" alt="image-20201214110345934"></p>
-</li>
-<li><p>修改_config.yml，改为true</p>
-<p><img src="/2020/12/14/hexo%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20201214114031987.png" alt="image-20201214114031987"></p>
-</li>
-</ul>
-
+<p><img src="/2020/12/14/hexo%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20201214100939344.png" alt="image-20201214100939344"></p></li></ul>
+        
       
 
       
