@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="https://zichao-xie.github.io">
   <title>hexo解决图片显示问题 | xzc&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安装好hexo后，发现无法插入图片，解决办法如下  安装图片插件 npm install https:&#x2F;&#x2F;github.com&#x2F;CodeFalling&#x2F;hexo-asset-image  报错如下：">
+  <meta name="description" content="安装好hexo后，发现无法插入图片，解决办法如下  安装图片插件 npm install https:&#x2F;&#x2F;github.com&#x2F;CodeFalling&#x2F;hexo-asset-image">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo解决图片显示问题">
 <meta property="og:url" content="https://zichao-xie.github.io/2020/12/14/hexo%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="xzc&#39;s blog">
-<meta property="og:description" content="安装好hexo后，发现无法插入图片，解决办法如下  安装图片插件 npm install https:&#x2F;&#x2F;github.com&#x2F;CodeFalling&#x2F;hexo-asset-image  报错如下：">
+<meta property="og:description" content="安装好hexo后，发现无法插入图片，解决办法如下  安装图片插件 npm install https:&#x2F;&#x2F;github.com&#x2F;CodeFalling&#x2F;hexo-asset-image">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://zichao-xie.github.io/2020/12/14/hexo%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20201214100939344.png">
 <meta property="og:image" content="https://zichao-xie.github.io/2020/12/14/hexo%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20201214110144533.png">
 <meta property="og:image" content="https://zichao-xie.github.io/2020/12/14/hexo%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20201214110345934.png">
 <meta property="og:image" content="https://zichao-xie.github.io/2020/12/14/hexo%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20201214114031987.png">
 <meta property="article:published_time" content="2020-12-14T01:38:55.000Z">
-<meta property="article:modified_time" content="2020-12-17T01:56:00.512Z">
+<meta property="article:modified_time" content="2020-12-17T02:56:02.248Z">
 <meta property="article:author" content="zichaoXie">
 <meta property="article:tag" content="CSDN">
 <meta name="twitter:card" content="summary">
@@ -167,15 +167,17 @@
 <li><p>安装图片插件</p>
 <figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">npm install https:<span class="regexp">//gi</span>thub.com<span class="regexp">/CodeFalling/</span>hexo-asset-image</span><br></pre></td></tr></table></figure>
 
-<p>报错如下：</p>
-<p><img src="/2020/12/14/hexo%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20201214100939344.png" alt="image-20201214100939344"></p>
  <a id="more"></a>    
 
-<p>​    显示权限不够，但是我已经加了<code>sudo</code>。查阅博客后发现，是因为用<code>root </code>用户进行了局部安装npm包的操作，留下所属权为 <code>root</code> 的文件，导致普通用户无法访问 <code>root</code>的文件内容。找到报错的文件，会看到它的所有者是 <code>root</code>。之前用 <code>root</code> 进行了局部的安装操作，导致这个文件的所有者是 <code>root</code> ，还包括 <code>.npm</code> 文件夹下部分文件夹的所有权，也是 <code>root</code>，普通用户当然就无权访问了。就会报权限错误。</p>
-<p><em>解决</em>：</p>
-<p>​    将.npm所有者变为自己</p>
-<p><img src="/2020/12/14/hexo%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20201214110144533.png" alt="image-20201214110144533"></p>
+<p>报错如下：</p>
+<p><img src="/2020/12/14/hexo%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20201214100939344.png" alt="image-20201214100939344"></p>
 </li>
+</ul>
+<p>  ​    显示权限不够，但是我已经加了<code>sudo</code>。查阅博客后发现，是因为用<code>root </code>用户进行了局部安装npm包的操作，留下所属权为 <code>root</code> 的文件，导致普通用户无法访问 <code>root</code>的文件内容。找到报错的文件，会看到它的所有者是 <code>root</code>。之前用 <code>root</code> 进行了局部的安装操作，导致这个文件的所有者是 <code>root</code> ，还包括 <code>.npm</code> 文件夹下部分文件夹的所有权，也是 <code>root</code>，普通用户当然就无权访问了。就会报权限错误。</p>
+<p>  <em>解决</em>：</p>
+<p>  ​    将.npm所有者变为自己</p>
+<p>  <img src="/2020/12/14/hexo%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20201214110144533.png" alt="image-20201214110144533"></p>
+<ul>
 <li><p>设置typora，使用相对路径。</p>
 <p><img src="/2020/12/14/hexo%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/image-20201214110345934.png" alt="image-20201214110345934"></p>
 </li>
@@ -424,6 +426,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">nodejs</a>
               </li>
             
             <div class="clearfix"></div>

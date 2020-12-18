@@ -6,23 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://zichao-xie.github.io">
-  <title>Pyhton学习笔记--基础 | xzc&#39;s blog</title>
+  <title>Tag: nodejs | xzc&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Python优点 Python缺点 Python语法 基础 输出 输入 变量 数据类型 整数 浮点数 字符串 布尔型 空值   格式化 容器 list tuple dict set   条件判断 循环 函数   后记">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Pyhton学习笔记--基础">
-<meta property="og:url" content="https://zichao-xie.github.io/2020/12/16/python/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="xzc&#39;s blog">
+<meta property="og:url" content="https://zichao-xie.github.io/tags/nodejs/index.html">
 <meta property="og:site_name" content="xzc&#39;s blog">
-<meta property="og:description" content="Python优点 Python缺点 Python语法 基础 输出 输入 变量 数据类型 整数 浮点数 字符串 布尔型 空值   格式化 容器 list tuple dict set   条件判断 循环 函数   后记">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://zichao-xie.github.io/2020/12/16/python/image-20201216093508717.png">
-<meta property="article:published_time" content="2020-12-16T01:07:17.000Z">
-<meta property="article:modified_time" content="2020-12-17T05:56:49.450Z">
 <meta property="article:author" content="zichaoXie">
-<meta property="article:tag" content="CSDN">
-<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://zichao-xie.github.io/2020/12/16/python/image-20201216093508717.png">
   
     <link rel="alternative" href="/atom.xml" title="xzc&#39;s blog" type="application/atom+xml">
   
@@ -140,360 +132,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-python" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Pyhton学习笔记--基础
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/12/17/js/" class="archive-article-date">
+  	<time datetime="2020-12-17T05:54:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-17</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/12/17/js/">js</a>
     </h1>
   
 
-        
-        <a href="/2020/12/16/python/" class="archive-article-date">
-  	<time datetime="2020-12-16T01:07:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- toc -->
-
-<ul>
-<li><a href="#python%E4%BC%98%E7%82%B9">Python优点</a></li>
-<li><a href="#python%E7%BC%BA%E7%82%B9">Python缺点</a></li>
-<li><a href="#python%E8%AF%AD%E6%B3%95">Python语法</a><ul>
-<li><a href="#%E5%9F%BA%E7%A1%80">基础</a></li>
-<li><a href="#%E8%BE%93%E5%87%BA">输出</a></li>
-<li><a href="#%E8%BE%93%E5%85%A5">输入</a></li>
-<li><a href="#%E5%8F%98%E9%87%8F">变量</a></li>
-<li><a href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">数据类型</a><ul>
-<li><a href="#%E6%95%B4%E6%95%B0">整数</a></li>
-<li><a href="#%E6%B5%AE%E7%82%B9%E6%95%B0">浮点数</a></li>
-<li><a href="#%E5%AD%97%E7%AC%A6%E4%B8%B2">字符串</a></li>
-<li><a href="#%E5%B8%83%E5%B0%94%E5%9E%8B">布尔型</a></li>
-<li><a href="#%E7%A9%BA%E5%80%BC">空值</a></li>
-</ul>
-</li>
-<li><a href="#%E6%A0%BC%E5%BC%8F%E5%8C%96">格式化</a></li>
-<li><a href="#%E5%AE%B9%E5%99%A8">容器</a><ul>
-<li><a href="#list">list</a></li>
-<li><a href="#tuple">tuple</a></li>
-<li><a href="#dict">dict</a></li>
-<li><a href="#set">set</a></li>
-</ul>
-</li>
-<li><a href="#%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD">条件判断</a></li>
-<li><a href="#%E5%BE%AA%E7%8E%AF">循环</a></li>
-<li><a href="#%E5%87%BD%E6%95%B0">函数</a></li>
-</ul>
-</li>
-<li><a href="#%E5%90%8E%E8%AE%B0">后记</a></li>
-</ul>
-<!-- tocstop -->
-
-<a id="more"></a>
-
-<h2><span id="python优点">Python优点</span></h2><ul>
-<li><p>简单易学</p>
-</li>
-<li><p>开源</p>
-</li>
-<li><p>高级语言</p>
-</li>
-<li><p>解释性语言</p>
-<ul>
-<li>使用专门的解释器对源程序逐行解释成特定平台的机器码并立即执行。</li>
-<li>特点：解释型语言不需要事先编译，其直接将源代码解释成机器码并立即执行，所以只要某一平台提供了相应的解释器即可运行该程序。</li>
-<li>总结<ul>
-<li>每次运行都需要将源代码解释成机器码并执行，效率较低；</li>
-<li>只要平台提供相应的解释器，就可以运行源代码，所以可以方便源程序移植；</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>编译型语言</p>
-<ul>
-<li>使用专门的编译器，针对特定的平台，将高级语言源代码一次性的编译成可被该平台硬件执行的机器码，并包装成该平台所能识别的可执行性程序的格式。</li>
-<li>特点：在编译型语言写的程序执行之前，需要一个专门的编译过程，把源代码编译成机器语言的文件，如exe格式的文件，以后要再运行时，直接使用编译结果即可，如直接运行exe文件。因为只需编译一次，以后运行时不需要编译，所以编译型语言执行效率高。</li>
-<li>总结：<ul>
-<li>一次性的编译成平台相关的机器语言文件，运行时脱离开发环境，运行效率高；</li>
-<li>与特定平台相关，一般无法移植到其他平台；</li>
-<li>现有的C、C++、Objective等都属于编译型语言。</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-</li>
-<li><p>可移植性</p>
-</li>
-<li><p>由于 Python 是开源的，它已经被移植到许多平台上。如果能够避免使用依赖系统的特性，那就意味着，所有 Python 程序都无需修改就可以在好多平台上运行，包括 Linux、Windows、FreeBSD、Solaris 等等，甚至还有 PocketPC、Symbian 以及 Google 基于 Linux 开发的 Android平台。</p>
-</li>
-<li><p>功能强大：从字符串处理到复杂的 3D 图形编程，Python 借助扩展模块都可以轻松完成。</p>
-</li>
-<li><p>可拓展性</p>
-<ul>
-<li>Python 的可扩展性体现为它的模块，Python 具有脚本语言中最丰富和强大的类库，这些类库覆盖了文件 I/O、GUI、网络编程、数据库访问、文本操作等绝大部分应用场景。</li>
-<li>Python 可扩展性一个最好的体现是，当我们需要一段关键代码运行的更快时，可以将其用 C 或 C++ 语言编写，然后在 Python 程序中使用它们即可。</li>
-</ul>
-</li>
-</ul>
-<h2><span id="python缺点">Python缺点</span></h2><ul>
-<li>速度慢</li>
-<li>源代码加密困难：不像编译型语言的源程序会被编译成目标程序，Python 直接运行源程序，因此对源代码加密比较困难。</li>
-</ul>
-<h2><span id="python语法">Python语法</span></h2><h3><span id="基础">基础</span></h3><ul>
-<li><p>Python语法采用缩进方式，通常<code>tab</code>,即四个空格。</p>
-</li>
-<li><p>注释以<code>#</code>开头，pycharm多行注释与取消：<code>Ctrl+/</code>。</p>
-</li>
-<li><p>语句以<code>:</code>结尾，看做代码块。</p>
-<p>示例:</p>
-<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line"><span class="comment"># print absolute value of an integer:</span></span><br><span class="line"><span class="keyword">a</span> = int (input(<span class="string">&#x27;please inpute a number\n&#x27;</span>))</span><br><span class="line"><span class="keyword">if</span> <span class="keyword">a</span> &gt;= <span class="number">0</span>:</span><br><span class="line">    print(<span class="keyword">a</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(-<span class="keyword">a</span>)</span><br></pre></td></tr></table></figure>
-
-<p><em>注：输入a为整型要加<code>int</code></em></p>
-</li>
-</ul>
-<h3><span id="输出">输出</span></h3><ul>
-<li><p>国际惯例，打印字符串</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&#x27;hello,world&#x27;</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>可以接受多个字符串,遇到<code>,</code>会输出一个<code> </code>。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&#x27;hello,my name&#x27;</span>,<span class="string">&#x27;is xzc&#x27;</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>打印整数</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="number">1</span>+<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
-
-<p>更复杂些</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&#x27;1 + 2 =&#x27;</span>,<span class="number">1</span>+<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3><span id="输入">输入</span></h3><ul>
-<li><p>创建一个name变量接受输入</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">name=<span class="built_in">input</span>()</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>输入提示</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">name = <span class="built_in">input</span>(<span class="string">&#x27;please enter your name: \n&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3><span id="变量">变量</span></h3><ul>
-<li><p>大小写英文、数字、<code>_</code>的组合，任意开头都可以</p>
-</li>
-<li><p><code>=</code>可任意赋值，即使是不同的数据类型</p>
-<ul>
-<li>动态语言：变量本身类型不固定</li>
-<li>静态语言：在定义时必须指定变量类型</li>
-</ul>
-<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">tmp = <span class="number">2</span></span><br><span class="line"><span class="function"><span class="title">print</span><span class="params">(tmp,<span class="string">&quot;\n&quot;</span>)</span></span></span><br><span class="line"></span><br><span class="line">tmp = <span class="string">&#x27;string&#x27;</span></span><br><span class="line"><span class="function"><span class="title">print</span><span class="params">(tmp+<span class="string">&#x27;\n&#x27;</span>)</span></span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>赋值示例：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="number">2</span></span><br><span class="line">b = a</span><br><span class="line">a = <span class="number">3</span></span><br><span class="line">print(b)</span><br></pre></td></tr></table></figure>
-
-<p>输出为<code>2</code>，b指向真正的对象。</p>
-</li>
-</ul>
-<h3><span id="数据类型">数据类型</span></h3><h4><span id="整数">整数</span></h4><ul>
-<li><p>对于很大的数，0很难数。数字中间可用<code>_</code>分隔，<code>10000000</code>与<code>10_00_0000</code>是一样的</p>
-</li>
-<li><p>只要内存够，长度没有限制</p>
-</li>
-<li><p>除法示例</p>
-<figure class="highlight basic"><table><tr><td class="code"><pre><span class="line"><span class="symbol">10 </span>/ <span class="number">3</span></span><br><span class="line"><span class="number">3.3333333333333335</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">10 </span>// <span class="number">3</span> #地板除，只保留整数</span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure>
-
-
-
-</li>
-</ul>
-<h4><span id="浮点数">浮点数</span></h4><ul>
-<li><p>科学计数法：1.23e9</p>
-</li>
-<li><p>整数和浮点数在计算机内部存储的方式是不同的，整数运算永远是精确的，而浮点数运算则可能会有四舍五入的误差。</p>
-</li>
-<li><p>有上限</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(sys.float_info.<span class="built_in">max</span>)</span><br><span class="line"><span class="number">1.7976931348623157e+308</span></span><br><span class="line"></span><br><span class="line">print(sys.float_info.<span class="built_in">min</span>)</span><br><span class="line"><span class="number">2.2250738585072014e-308</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h4><span id="字符串">字符串</span></h4><ul>
-<li><p>以<code>&#39;&#39;</code>或<code>&quot;&quot;</code>括起来的任意文本，<code>&#39;abc&#39;</code>和<code>&quot;abc&quot;</code>是相等的，但是文本包括<code>&#39;</code>要使用<code>&quot;&quot;</code>;文本包括<code>&quot;</code>在<code>&quot;</code>前加转义符<code>\</code>。</p>
-</li>
-<li><p>如果字符串里面有很多字符都需要转义，就需要加很多<code>\</code>，为了简化，Python还允许用<code>r&#39;&#39;</code>表示<code>&#39;&#39;</code>内部的字符串默认不转义。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&#x27;\\\t\\&#x27;</span>)</span><br><span class="line">\       \</span><br><span class="line">print(<span class="string">r&#x27;\\\t\\&#x27;</span>)</span><br><span class="line">\\\t\\</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>如果字符串内部有很多换行，用<code>\n</code>写在一行里不好阅读，为了简化，Python允许用<code>&#39;&#39;&#39;...&#39;&#39;&#39;</code>的格式表示多行内容</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&#x27;&#x27;&#x27;line1</span></span><br><span class="line"><span class="string">line2</span></span><br><span class="line"><span class="string">line3&#x27;&#x27;&#x27;</span>)</span><br><span class="line">line1</span><br><span class="line">line2</span><br><span class="line">line3</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>编码问题</p>
-<ul>
-<li><p><code>ASCII</code>只有英文，8比特</p>
-</li>
-<li><p><code>Unicode</code>16比特，包括各种语言</p>
-</li>
-<li><p><code>UTF-8</code>可变长编码，常用的英文字母被编码成1个字节，汉字通常是3个字节，只有很生僻的字符才会被编码成4-6个字节。</p>
-</li>
-<li><p>在计算机内存中，统一使用<code>Unicode</code>编码，当需要保存到硬盘或者需要传输的时候，就转换为<code>UTF-8</code>编码。用记事本编辑的时候，从文件读取的<code>UTF-8</code>字符被转换为<code>Unicode</code>字符到内存里，编辑完成后，保存的时候再把<code>Unicode</code>转换为<code>UTF-8</code>保存到文件</p>
-</li>
-<li><p>Python3用‘Unicode’编码的。Python提供了<code>ord()</code>函数获取字符的整数表示，<code>chr()</code>函数把编码转换为对应的字符。</p>
-</li>
-<li><p>知道字符串的整数编码，可以用十六进制写<code>str</code></p>
-<figure class="highlight 1c"><table><tr><td class="code"><pre><span class="line">&#x27;\u4e2d\u<span class="number">6587</span>&#x27;</span><br><span class="line">&#x27;中文&#x27;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>如果要在网络上传输，或者保存到磁盘上，就需要把<code>str</code>变为以字节为单位的<code>bytes</code>。<code>encode()</code>编码，<code>decode()</code>解码。</p>
-</li>
-</ul>
-</li>
-</ul>
-<h4><span id="布尔型">布尔型</span></h4><ul>
-<li>True、False <em>注意大小写</em></li>
-<li><code>and</code>、<code>or</code>、<code>not</code>运算</li>
-</ul>
-<h4><span id="空值">空值</span></h4><ul>
-<li>空值是Python里一个特殊的值，用<code>None</code>表示。<code>None</code>不能理解为<code>0</code>，因为<code>0</code>是有意义的，而<code>None</code>是一个特殊的空值。</li>
-</ul>
-<h3><span id="格式化">格式化</span></h3><ul>
-<li><p>在Python中，采用的格式化方式和C语言是一致的，用<code>%</code>实现。<code>%</code>是普通字符的话，用转义<code>%%</code></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">name = <span class="built_in">input</span>(<span class="string">&quot;please inpute name\n&quot;</span>)</span><br><span class="line">print(<span class="string">&quot;my name is %s&quot;</span>%name)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>formate()</code>会用传入的参数依次替换字符串内的占位符</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&#x27;my name is &#123;0&#125;,your name is &#123;1&#125;&#x27;</span>.<span class="built_in">format</span>(<span class="string">&#x27;xzc&#x27;</span>,<span class="string">&#x27;pl&#x27;</span>))</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>f-string</code>最后一种格式化字符串的方法是使用以<code>f</code>开头的字符串，称之为<code>f-string</code>，它和普通字符串不同之处在于，字符串如果包含<code>&#123;xxx&#125;</code>，就会以对应的变量替换</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">r = <span class="number">2.5</span></span><br><span class="line">s = <span class="number">3.14</span> * r ** <span class="number">2</span></span><br><span class="line">print(<span class="string">f&#x27;The area of a circle with radius <span class="subst">&#123;r&#125;</span> is <span class="subst">&#123;s:<span class="number">.2</span>f&#125;</span>&#x27;</span>)</span><br><span class="line">The area of a circle <span class="keyword">with</span> radius <span class="number">2.5</span> <span class="keyword">is</span> <span class="number">19.62</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3><span id="容器">容器</span></h3><h4><span id="list">list</span></h4><ul>
-<li><p>list操作如下</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">names = [<span class="string">&#x27;xzc&#x27;</span>,<span class="string">&#x27;pl&#x27;</span>,<span class="string">&#x27;zhm&#x27;</span>,<span class="string">&#x27;wjy&#x27;</span>,<span class="string">&#x27;wqs&#x27;</span>]</span><br><span class="line">print(<span class="built_in">len</span>(names),<span class="string">&quot;\n&quot;</span>) <span class="comment">#获取长度</span></span><br><span class="line">print(names[<span class="number">0</span>],<span class="string">&#x27;\n&#x27;</span>)  <span class="comment">#获取第一个</span></span><br><span class="line">print(names[-<span class="number">1</span>],<span class="string">&#x27;\n&#x27;</span>) <span class="comment">#获取最后一个</span></span><br><span class="line">names.append(<span class="string">&#x27;lzy&#x27;</span>)  <span class="comment">#末尾添加</span></span><br><span class="line">print(names[-<span class="number">1</span>],<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">names.insert(<span class="number">5</span>,<span class="string">&#x27;LZY&#x27;</span>) <span class="comment">#插入，不是替换</span></span><br><span class="line">print(names[-<span class="number">2</span>],<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">names.pop() <span class="comment">#删除末尾</span></span><br><span class="line">names.pop(<span class="number">5</span>)</span><br><span class="line">print(<span class="built_in">len</span>(names),<span class="string">&quot;\n&quot;</span>) <span class="comment">#获取长度</span></span><br><span class="line">names[<span class="number">0</span>] = <span class="string">&#x27;XZC&#x27;</span></span><br><span class="line">names.append(<span class="number">6</span>) <span class="comment">#list里面数据类型可以不同</span></span><br><span class="line">names[<span class="number">0</span>] = [<span class="string">&#x27;xzc&#x27;</span>,<span class="string">&#x27;XZC&#x27;</span>] <span class="comment">#list数据可以是list</span></span><br><span class="line">print(names[<span class="number">0</span>][<span class="number">1</span>]) <span class="comment">#拿到XZC</span></span><br><span class="line">num = <span class="built_in">list</span>(<span class="built_in">range</span>(<span class="number">5</span>)) <span class="comment">#0-5</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h4><span id="tuple">tuple</span></h4><ul>
-<li><p>tuple（元组），初始化就不能修改，灭有插入函数。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">names = (<span class="string">&#x27;xzc&#x27;</span>,<span class="string">&#x27;pl&#x27;</span>,<span class="string">&#x27;zhm&#x27;</span>)</span><br><span class="line">print(names[<span class="number">1</span>],<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">k = () <span class="comment">#空元组</span></span><br><span class="line">t = (<span class="string">&#x27;wqs&#x27;</span>,) <span class="comment">#定义只有一个元素的元祖要加,，以免误解成数学计算上的括号</span></span><br><span class="line">print(t[<span class="number">0</span>],<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">print(t,<span class="string">&#x27;\n&#x27;</span>) <span class="comment">#Python在输出只有一个元素的元组时也会加一个,</span></span><br><span class="line">c = (<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, [<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>])</span><br><span class="line">c[<span class="number">2</span>][<span class="number">0</span>] = <span class="string">&#x27;X&#x27;</span></span><br><span class="line">c[<span class="number">2</span>][<span class="number">1</span>] = <span class="string">&#x27;Y&#x27;</span></span><br><span class="line">print(c,<span class="string">&#x27;\n&#x27;</span>) <span class="comment">#变得是list的元素，元组指向的list并没有变</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h4><span id="dict">dict</span></h4><ul>
-<li><p>键值存储</p>
-</li>
-<li><p>dict内部存放的顺序和key放入的顺序是没有关系的</p>
-</li>
-<li><p>dict的键必须是不可变的，因为dict根据key来计算value的存储位置，list不可以作为键。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">score = &#123;<span class="string">&#x27;lbj&#x27;</span>:<span class="number">100</span>,<span class="string">&#x27;DVS&#x27;</span>:<span class="number">99</span>,<span class="string">&#x27;jr&#x27;</span>:<span class="number">70</span>&#125;</span><br><span class="line">print(score[<span class="string">&#x27;lbj&#x27;</span>],<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">score[<span class="string">&#x27;TT&#x27;</span>] = <span class="string">&#x27;80&#x27;</span> <span class="comment">#把数据放入dict</span></span><br><span class="line">print(score[<span class="string">&#x27;TT&#x27;</span>],<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">score[<span class="string">&#x27;TT&#x27;</span>] = <span class="string">&#x27;81&#x27;</span></span><br><span class="line">print(score[<span class="string">&#x27;TT&#x27;</span>],<span class="string">&#x27;\n&#x27;</span>) <span class="comment">#会替换掉80</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="string">&#x27;TT&#x27;</span> <span class="keyword">in</span> score:<span class="comment">#判断存不存在</span></span><br><span class="line">	print(<span class="string">&#x27;yes&#x27;</span>,<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line"><span class="keyword">else</span>:	</span><br><span class="line">    print(<span class="string">&#x27;no&#x27;</span>,<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line"></span><br><span class="line">print(score.get(<span class="string">&#x27;dio&#x27;</span>))</span><br><span class="line">print(score.get(<span class="string">&#x27;dio&#x27;</span>,-<span class="number">1</span>))<span class="comment">#指定回复</span></span><br><span class="line"></span><br><span class="line">score.pop(<span class="string">&#x27;dio&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-
-
-</li>
-</ul>
-<h4><span id="set">set</span></h4><ul>
-<li><p>无序</p>
-</li>
-<li><p>唯一</p>
-<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">s = <span class="builtin-name">set</span>([3,2,1,4,2]) #传入list</span><br><span class="line"><span class="builtin-name">print</span>(s,<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">s.<span class="builtin-name">add</span>(7)</span><br><span class="line">s.<span class="builtin-name">remove</span>(7)</span><br><span class="line">b = <span class="builtin-name">set</span>([4,7,3,9])</span><br><span class="line"><span class="builtin-name">print</span>(s&amp;b,<span class="string">&#x27;\n&#x27;</span>) </span><br><span class="line"><span class="builtin-name">print</span>(s|b,<span class="string">&#x27;\n&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-
-
-</li>
-</ul>
-<h3><span id="条件判断">条件判断</span></h3><ul>
-<li><p>if,注意缩进和<code>:</code></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">age = <span class="number">3</span></span><br><span class="line"><span class="keyword">if</span> age &gt;= <span class="number">18</span>:</span><br><span class="line">    print(<span class="string">&#x27;adult&#x27;</span>)</span><br><span class="line"><span class="keyword">elif</span> age &gt;= <span class="number">6</span>:</span><br><span class="line">    print(<span class="string">&#x27;teenager&#x27;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">&#x27;kid&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3><span id="循环">循环</span></h3><ul>
-<li><p>for…in</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">names = [<span class="string">&#x27;xzc&#x27;</span>,<span class="string">&#x27;pl&#x27;</span>,<span class="string">&#x27;zhm&#x27;</span>]</span><br><span class="line"><span class="keyword">for</span> name <span class="keyword">in</span> names:</span><br><span class="line">	print(name,<span class="string">&#x27;\n&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sum</span> = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">100</span>):</span><br><span class="line">	<span class="built_in">sum</span>=<span class="built_in">sum</span>+x</span><br><span class="line">print(<span class="built_in">sum</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>while</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sum</span> = <span class="number">0</span></span><br><span class="line">num = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> num&lt;<span class="number">100</span>:</span><br><span class="line">	<span class="built_in">sum</span> = <span class="built_in">sum</span> + num</span><br><span class="line">	num = num + <span class="number">2</span></span><br><span class="line">print(<span class="built_in">sum</span>,<span class="string">&#x27;\n&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<p><code>break</code>跳出循环；<code>continue</code>跳出这次循环，直接开始下一次循环。</p>
-</li>
-</ul>
-<h3><span id="函数">函数</span></h3><ul>
-<li><p>强制类型转换</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">int</span>(<span class="string">&#x27;123&#x27;</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>定义函数:<code>def</code>,默认参数要是不变对象</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_abs</span>(<span class="params">x=<span class="number">2</span></span>):</span><span class="comment"># 默认参数，必选参数要在前面，默认参数在后，调用时可以只传必选参数</span></span><br><span class="line">    <span class="keyword">if</span> x &gt;= <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> x</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> -x</span><br></pre></td></tr></table></figure>
-
-<p><em>多个默认参数用参数名指定</em></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">nop</span>():</span></span><br><span class="line">	<span class="keyword">pass</span> <span class="comment">#如果还没想好函数实现，可以先写一个pass，函数什么也不做，让程序跑起来，用在其他语句里也可以，像if。</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>函数无法判断类型错误，只可以判断参数数量的错误，要在函数里面自己判断参数类型。</p>
-</li>
-<li><p>可以返回多个参数</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mul</span>(<span class="params">x,y</span>):</span></span><br><span class="line">	<span class="keyword">return</span> x,y</span><br><span class="line"></span><br><span class="line">x,y=mul(<span class="number">1</span>,<span class="number">2</span>) <span class="comment">#其实返回的是一个tuple，在语法上，返回一个tuple可以省略括号，而多个变量可以同时接收一个tuple</span></span><br><span class="line">print(x,y,<span class="string">&#x27;\n&#x27;</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>可变参数</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">calc</span>(<span class="params">*numbers</span>):</span> <span class="comment">#定义</span></span><br><span class="line">    <span class="built_in">sum</span> = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> n <span class="keyword">in</span> numbers:</span><br><span class="line">        <span class="built_in">sum</span> = <span class="built_in">sum</span> + n * n</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">sum</span></span><br><span class="line"></span><br><span class="line">calc(<span class="number">1</span>,<span class="number">2</span>) <span class="comment">#调用</span></span><br><span class="line">nums = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">calc(*nums) <span class="comment">#Python允许在list或tuple前面加一个*号，把list或tuple的元素变成可变参数传进去</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>关键字参数</p>
-<p>可变参数允许你传入0个或任意个参数，这些可变参数在函数调用时自动组装为一个tuple。而关键字参数允许你传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个dict。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">person</span>(<span class="params">name, age, **kw</span>):</span></span><br><span class="line">    print(<span class="string">&#x27;name:&#x27;</span>, name, <span class="string">&#x27;age:&#x27;</span>, age, <span class="string">&#x27;other:&#x27;</span>, kw)</span><br><span class="line"></span><br><span class="line">person(<span class="string">&#x27;Adam&#x27;</span>, <span class="number">45</span>, gender=<span class="string">&#x27;M&#x27;</span>, job=<span class="string">&#x27;Engineer&#x27;</span>)</span><br><span class="line">name: Adam age: <span class="number">45</span> other: &#123;<span class="string">&#x27;gender&#x27;</span>: <span class="string">&#x27;M&#x27;</span>, <span class="string">&#x27;job&#x27;</span>: <span class="string">&#x27;Engineer&#x27;</span>&#125; <span class="comment">#输出</span></span><br></pre></td></tr></table></figure>
-
-<p>组装成dict</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">extra = &#123;<span class="string">&#x27;city&#x27;</span>: <span class="string">&#x27;Beijing&#x27;</span>, <span class="string">&#x27;job&#x27;</span>: <span class="string">&#x27;Engineer&#x27;</span>&#125;</span><br><span class="line">person(<span class="string">&#x27;Jack&#x27;</span>, <span class="number">24</span>, **extra)</span><br><span class="line">name: Jack age: <span class="number">24</span> other: &#123;<span class="string">&#x27;city&#x27;</span>: <span class="string">&#x27;Beijing&#x27;</span>, <span class="string">&#x27;job&#x27;</span>: <span class="string">&#x27;Engineer&#x27;</span>&#125;<span class="comment">#输出</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>命名关键字参数</p>
-<p>和关键字参数<code>**kw</code>不同，命名关键字参数需要一个特殊分隔符<code>*</code>，<code>*</code>后面的参数被视为命名关键字参数。命名关键字参数必须传入参数名，这和位置参数不同。如果没有传入参数名，调用将报错</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">person</span>(<span class="params">name, age, *, city, job</span>):</span></span><br><span class="line">    print(name, age, city, job)</span><br><span class="line">    </span><br><span class="line">person(<span class="string">&#x27;Jack&#x27;</span>, <span class="number">24</span>, city=<span class="string">&#x27;Beijing&#x27;</span>, job=<span class="string">&#x27;Engineer&#x27;</span>)<span class="comment">#调用</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>参数组合</p>
-<p>参数定义的顺序必须是：必选参数、默认参数、可变参数、命名关键字参数和关键字参数。</p>
-</li>
-</ul>
-<h2><span id="后记">后记</span></h2><ul>
-<li><p>学习<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/1016959663602400/1016959735620448">廖雪峰博客</a>笔记。</p>
-<p><img src="/2020/12/16/python/image-20201216093508717.png" alt="image-20201216093508717"></p>
-</li>
-<li><p>有序无序并不是排序，是有区别的，所以set是无序的。所有使用hash的都是无序的。</p>
-</li>
-<li><p>关于可变对象</p>
-<ul>
-<li>list是可变的，对list进行操作，list本身是会变得。</li>
-<li>str不可变。当我们调用<code>a.replace(&#39;a&#39;, &#39;A&#39;)</code>时，实际上调用方法<code>replace</code>是作用在字符串对象<code>&#39;abc&#39;</code>上的，而这个方法虽然名字叫<code>replace</code>，但却没有改变字符串<code>&#39;abc&#39;</code>的内容。相反，<code>replace</code>方法创建了一个新字符串<code>&#39;Abc&#39;</code>并返回，如果我们用变量<code>b</code>指向该新字符串，就容易理解了，变量<code>a</code>仍指向原有的字符串<code>&#39;abc&#39;</code>，但变量<code>b</code>却指向新字符串<code>&#39;Abc&#39;</code>了。</li>
-</ul>
-</li>
-</ul>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -503,121 +171,29 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">nodejs</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://zichao-xie.github.io/2020/12/16/python/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2020/12/17/js/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          js
-        
-      </div>
-    </a>
   
   
-    <a href="/2020/12/14/%E5%BF%AB%E9%80%9F%E6%8E%8C%E6%8F%A1%E6%96%B0%E8%AF%AD%E8%A8%80/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">快速掌握新语言</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -640,9 +216,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
